@@ -66,5 +66,6 @@ sup a,.footnote-ref{color:var(--maroon);text-decoration:none}
 .covers a:hover span{text-decoration:underline}
 @media (max-width:520px){.pager{grid-template-columns:1fr}.pager .next{text-align:left}}
 .text.poem p{margin:0}
+.text.poem p:has(br){margin:0 0 1em}
 .text.poem .stanza{height:1em}
 .text[lang="ta"]{font-family:"Noto Serif Tamil","Source Serif 4",serif;line-height:1.85}
