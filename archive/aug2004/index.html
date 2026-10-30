@@ -1,25 +1,48 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>lines | August 2004</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="../lines.css?v=5"><style>
-/* colours of the original index page: black masthead, red cover panel, gray type */
-.mast{background:#000000}
-.mast .wordmark{color:#CCCCCC}
-.stripe{background:#CC0000}
-.panel{background:#CC0000;color:#CCCCCC;border-top-color:#000000;box-shadow:none}
-.issue,.vol{color:#CCCCCC}
-.toc h2{color:#CCCCCC}
-.toc a,.toc .by{color:#CCCCCC}
-.toc a:hover,.toc a:focus{color:#FFFFFF;text-decoration-color:#000000}
-.archive-link a{color:#CCCCCC}
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>lines | August 2004</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+/* the layout and colours of the original index.html: black masthead, red stripe,
+   black navigation column on the left, red cover panel on the right, gray type */
+body{margin:0;background:#8396A7;color:#CCCCCC;font-family:"Source Serif 4",Georgia,serif;font-size:18px;line-height:1.5}
+a{color:#CCCCCC}
+.top{background:#000000;height:112px;display:flex;justify-content:flex-end;align-items:flex-start;box-sizing:border-box;padding:22px 28px 0 0}
+.wordmark{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-weight:600;font-size:clamp(56px,8vw,88px);line-height:1;color:#CCCCCC;text-decoration:none}
+.stripe{height:12px;background:#CC0000}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,500px);max-width:1040px;margin:0 auto}
+.side{align-self:end;padding:0 0 0 0}
+.side nav{background:#000000;padding:18px 24px}
+.side nav a{display:block;text-decoration:none;font-size:17px;margin:0 0 12px}
+.side nav a:hover{color:#FFFFFF;text-decoration:underline}
+.panel{background:#CC0000;padding:36px clamp(20px,5vw,40px) 44px;margin:0}
+.panel img{display:block;margin:0 auto 22px;width:180px;height:auto}
+.issue{margin:0;text-align:center;font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-weight:600;font-size:40px;line-height:1.1;color:#CCCCCC}
+.vol{margin:4px 0 34px;text-align:center;font-style:italic;font-weight:600;color:#CCCCCC}
+.toc section{margin:0 0 26px}
+.toc h2{margin:0 0 10px;font-size:19px;font-style:italic;font-weight:400;color:#CCCCCC;border-bottom:1px solid rgba(0,0,0,.4);padding-bottom:6px}
+.toc ul{list-style:none;margin:0;padding:0 0 0 clamp(0px,4vw,24px)}
+.toc li{margin:0 0 12px}
+.toc a{display:block;text-decoration:none;color:#CCCCCC;font-size:17px;line-height:1.4}
+.toc a:hover,.toc a:focus{color:#FFFFFF;text-decoration:underline}
+.toc .by{display:block;font-size:15px;font-style:italic;color:#CCCCCC}
+.toc .by::before{content:"\2013\00a0"}
+.foot{background:#000000;text-align:center;padding:18px 16px;font-size:14px;color:#CCCCCC;margin-top:0}
+@media (max-width:760px){.grid{grid-template-columns:minmax(0,1fr)}.side{order:2}.panel{margin:0}}
 </style></head><body>
-<header class="mast"><div class="mast-inner"><a class="wordmark" href="../index.html">lines</a></div><div class="stripe"></div></header>
-<main class="cover">
-  <div class="panel">
-    <figure class="art"><a href="Oncoverart.html"><img src="images/cover-art.png" alt="Logo of the Coalition to Stop the Use of Child Soldiers"></a></figure>
+<header class="top"><a class="wordmark" href="../index.html">lines</a></header>
+<div class="stripe"></div>
+<div class="grid">
+  <aside class="side">
+    <nav>
+      <a href="../index.html">New-Lines home</a>
+      <a href="../index.html#archive">All archived issues</a>
+    </nav>
+  </aside>
+  <main class="panel">
+    <img src="images/cover-art.png" alt="Logo of the Coalition to Stop the Use of Child Soldiers">
     <p class="issue">August 2004</p>
     <p class="vol">Volume III; Issue 2</p>
     <div class="toc"><section><h2>Editorial Comments</h2><ul><li><a href="Editorial_Ahilan.html">Child Soldiers and “Our Boys”<span class="by">Ahilan Kadirgamar</span></a></li><li><a href="Editorial_Vasuki.html">The Politics of Faith and Fold<span class="by">Vasuki Nesiah</span></a></li><li><a href="Editorial_Nanthi.html">Peace Talks: Whereto from Here<span class="by">Nanthikesan</span></a></li></ul></section><section><h2>Interventions</h2><ul><li><a href="NanthiniIII.html">The Experiences of Tamil Women: Nationalism, Construction of Gender, and Women’s Political Agency (Part III)<span class="by">Nanthini Sornaraja</span></a></li><li><a href="Ingrid.html">Whose Mission? Limits and Potentials of the SLMM<span class="by">Ingrid Samset</span></a></li><li><a href="BazeerTamil.htm">Regionalism: Fact or Fiction with Reference to the Karuna Saga (Tamil, Bamini font)<span class="by">S. M. M. Bazeer</span></a></li><li><a href="BazeerEnglish.html">Regionalism: Fact or Fiction with Reference to the Karuna Saga<span class="by">S. M. M. Bazeer</span></a></li><li><a href="balasooriyan.htm">Poems (Tamil, Bamini font)<span class="by">Balasooriyan</span></a></li><li><a href="Mano.html">On the Influence(s) of Expatriate Property Developers in Post-civil War Sri Lanka<span class="by">Manoharadas Manobavan</span></a></li><li><a href="Arun.html">An Appraisal of Social Rights in Contemporary South Africa: Lessons for Other Developing Countries<span class="by">Arun K. Thiruvengadam</span></a></li><li><a href="Rajan.html">From Bay of Pigs to Baghdad: The Shackles of Imperialism<span class="by">Rajan Hoole</span></a></li></ul></section><section><h2>Critic’s Corner</h2><ul><li><a href="Farzana.html">Recovering Subversion by Nivedita Menon: A Challenge to Indian Feminism<span class="by">Farzana Haniffa</span></a></li><li><a href="Nila.html">Vijay Iyer &amp; Mike Ladd: In What Language?<span class="by">Nilanjana Bhattacharjya</span></a></li></ul></section><section><h2>In Solidarity</h2><ul><li><a href="CollectiveBatti.html">Also in Our Name<span class="by">Collective for Batticaloa</span></a></li><li><a href="PSG.html">Strengthening of Human Rights and Respect for Humanitarian Standards<span class="by">Peace Support Group</span></a></li></ul></section><section><h2>Cover</h2><ul><li><a href="Oncoverart.html">On Our Cover Art</a></li></ul></section></div>
-  </div>
-  <p class="archive-link"><a href="../index.html">&larr; All archived issues</a></p>
-</main>
+  </main>
+</div>
 <footer class="foot">lines magazine &middot; reconstructed for the newlines.net archive</footer>
 </body></html>
