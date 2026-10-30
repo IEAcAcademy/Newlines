@@ -20,9 +20,13 @@ h3,h4{font-weight:400;color:#fff}
 @keyframes parade{0%{opacity:0}2.5%{opacity:1}12.5%{opacity:1}15%{opacity:0}100%{opacity:0}}
 @media (prefers-reduced-motion:reduce){.slide{animation:none}.slide:first-child{opacity:1}}
 
-.hero-inner{position:relative;z-index:2;max-width:560px}
-.hero h1{margin:0 0 12px;font-size:clamp(28px,4.6vw,42px);color:var(--text);text-shadow:0 1px 8px rgba(0,0,0,.85)}
-.hero p{margin:0;font-size:clamp(16px,2.2vw,22px);text-shadow:0 1px 8px rgba(0,0,0,.85)}
+.hero-inner{position:relative;z-index:2;width:100%;background:rgba(0,0,0,.6);padding:10px 0}
+/* the heading runs across the hero like a banner */
+.ticker{margin:0;overflow:hidden;white-space:nowrap;font-family:Karla,sans-serif;font-weight:700;font-size:clamp(36px,7vw,72px);line-height:1.2;color:var(--text);text-shadow:0 1px 8px rgba(0,0,0,.85)}
+.ticker .track{display:inline-block;white-space:nowrap;animation:tick 22s linear infinite}
+.ticker .track span{display:inline-block}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.ticker .track{animation:none}}
 
 /* three boxes side by side, each a link, at every width */
 .trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(8px,2vw,24px);max-width:1040px;margin:20px auto;padding:0 16px}
