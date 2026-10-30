@@ -11,7 +11,7 @@ h3,h4{font-weight:400;color:#fff}
 .top{background:#000;padding:22px 16px;text-align:center}
 .brand{font-family:Montserrat,sans-serif;font-weight:600;font-size:clamp(22px,4vw,30px);letter-spacing:.12em;text-transform:uppercase;color:#fff;text-decoration:none}
 
-/* the parade: ten covers, each fading in over the last, four seconds apart */
+/* the parade: ten covers, each fading in over the last, six seconds apart */
 .hero{position:relative;overflow:hidden;width:calc(100% - 32px);max-width:1040px;margin:24px auto;min-height:clamp(440px,72vh,640px);display:flex;align-items:center;padding:48px clamp(16px,6vw,72px);background:#000}
 .hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(0,0,0,.72) 0%,rgba(0,0,0,.2) 55%,rgba(0,0,0,.05) 100%)}
 .slides{position:absolute;inset:0;z-index:0}
@@ -23,20 +23,19 @@ h3,h4{font-weight:400;color:#fff}
 
 .hero-inner{position:relative;z-index:2;max-width:560px}
 .hero h1{margin:0 0 16px;font-size:clamp(32px,5vw,42px);color:var(--text);text-shadow:0 1px 8px rgba(0,0,0,.85)}
-.hero p{margin:0 0 24px;font-size:clamp(18px,2.4vw,22px);text-shadow:0 1px 8px rgba(0,0,0,.85)}
-.btn{display:inline-block;padding:10px 32px;border-radius:4px;background:#fff;color:#000;font-size:14px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;text-decoration:none}
-.btn:hover{background:var(--text)}
+.hero p{margin:0;font-size:clamp(18px,2.4vw,22px);text-shadow:0 1px 8px rgba(0,0,0,.85)}
 
-/* each section is a black panel, so the watermark shows around them */
-.block{background:#000;max-width:1040px;margin:24px auto;padding:56px 24px 48px;text-align:center}
-.block h2{margin:0 0 12px;font-size:clamp(28px,4vw,33px);color:var(--blue)}
-.block h2::after{content:"";display:block;width:48px;height:1px;margin:16px auto 0;background:var(--line)}
-.about h3,.pitch h3{margin:24px 0 8px;font-size:22px}
-.about p{margin:0;color:var(--muted)}
-.archive-link{color:inherit;text-decoration:none}
-.archive-link:hover{text-decoration:underline;text-underline-offset:6px}
+/* three boxes side by side, each a link */
+.trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;max-width:1040px;margin:24px auto;padding:0 16px}
+.box{display:block;background:#000;padding:44px 24px;text-align:center;text-decoration:none;color:var(--text)}
+.box:hover{outline:1px solid var(--blue)}
+.box h2{margin:0 0 14px;font-size:clamp(24px,3vw,30px);color:var(--blue)}
+.box p{margin:0;color:var(--muted)}
 
-.pitch p{margin:0 0 6px;color:var(--muted)}
+/* the About and Reflections pages */
+.page-panel{background:#000;max-width:760px;margin:24px auto;padding:44px 40px 48px;color:var(--text)}
+.page-panel h1{margin:0 0 18px;font-size:clamp(28px,4vw,36px);color:var(--blue)}
+.page-panel p{margin:0 0 16px;color:var(--muted)}
+.page-panel a.back{display:inline-block;margin-top:12px}
 
-.foot{background:#000;margin:24px auto 0;max-width:1040px;padding:28px 16px 36px;text-align:center;font-size:14px;color:var(--muted)}
-.foot p{margin:0}
+@media (max-width:760px){.trio{grid-template-columns:minmax(0,1fr)}}
