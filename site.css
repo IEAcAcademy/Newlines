@@ -13,16 +13,16 @@ h3,h4{font-weight:400;color:#fff}
 
 /* the parade: ten covers, each fading in over the last, six seconds apart */
 .hero{position:relative;overflow:hidden;border-radius:26px;width:calc(100% - 32px);max-width:1040px;margin:20px auto;min-height:clamp(300px,60vh,640px);display:flex;align-items:center;padding:32px clamp(16px,6vw,72px);background:#000}
-.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(0,0,0,.72) 0%,rgba(0,0,0,.2) 55%,rgba(0,0,0,.05) 100%)}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:none}
 .slides{position:absolute;inset:0;z-index:0}
 .slide{position:absolute;inset:0;margin:0;opacity:0;animation:parade 60s infinite;animation-delay:calc(var(--i) * 6s)}
 .slide img{width:100%;height:100%;object-fit:cover;display:block}
 @keyframes parade{0%{opacity:0}2.5%{opacity:1}12.5%{opacity:1}15%{opacity:0}100%{opacity:0}}
 @media (prefers-reduced-motion:reduce){.slide{animation:none}.slide:first-child{opacity:1}}
 
-.hero-inner{position:relative;z-index:2;width:100%;background:rgba(0,0,0,.6);padding:10px 0}
+.hero-inner{position:relative;z-index:2;width:100%;background:none;padding:10px 0}
 /* the heading runs across the hero like a banner */
-.ticker{margin:0;overflow:hidden;white-space:nowrap;font-family:Karla,sans-serif;font-weight:700;font-size:clamp(36px,7vw,72px);line-height:1.2;color:var(--text);text-shadow:0 1px 8px rgba(0,0,0,.85)}
+.ticker{margin:0;overflow:hidden;white-space:nowrap;font-family:Karla,sans-serif;font-weight:700;font-size:clamp(25px,4.9vw,50px);line-height:1.2;color:#fff;text-shadow:0 0 6px rgba(0,0,0,.95),0 2px 14px rgba(0,0,0,.9)}
 .ticker .track{display:inline-block;white-space:nowrap;animation:tick 22s linear infinite}
 .ticker .track span{display:inline-block}
 @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
