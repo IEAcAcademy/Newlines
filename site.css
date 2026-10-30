@@ -12,7 +12,7 @@ h3,h4{font-weight:400;color:#fff}
 .brand{font-family:Montserrat,sans-serif;font-weight:600;font-size:clamp(20px,4vw,30px);letter-spacing:.12em;text-transform:uppercase;color:#fff;text-decoration:none}
 
 /* the parade: ten covers, each fading in over the last, six seconds apart */
-.hero{position:relative;overflow:hidden;width:calc(100% - 32px);max-width:1040px;margin:20px auto;min-height:clamp(300px,60vh,640px);display:flex;align-items:center;padding:32px clamp(16px,6vw,72px);background:#000}
+.hero{position:relative;overflow:hidden;border-radius:26px;width:calc(100% - 32px);max-width:1040px;margin:20px auto;min-height:clamp(300px,60vh,640px);display:flex;align-items:center;padding:32px clamp(16px,6vw,72px);background:#000}
 .hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(0,0,0,.72) 0%,rgba(0,0,0,.2) 55%,rgba(0,0,0,.05) 100%)}
 .slides{position:absolute;inset:0;z-index:0}
 .slide{position:absolute;inset:0;margin:0;opacity:0;animation:parade 60s infinite;animation-delay:calc(var(--i) * 6s)}
@@ -30,8 +30,11 @@ h3,h4{font-weight:400;color:#fff}
 
 /* three boxes side by side, each a link, at every width */
 .trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(8px,2vw,24px);max-width:1040px;margin:20px auto;padding:0 16px}
-.box{display:block;background:#000;padding:clamp(14px,3vw,40px) clamp(8px,2vw,24px);text-align:center;text-decoration:none;color:var(--text)}
-.box:hover{outline:1px solid var(--blue)}
+.box{display:block;background:rgba(0,0,0,.86);border-radius:22px;box-shadow:0 14px 34px rgba(0,0,0,.38);padding:clamp(14px,3vw,40px) clamp(8px,2vw,24px);text-align:center;text-decoration:none;color:var(--text);transition:transform .3s ease,box-shadow .3s ease}
+.trio .box:nth-child(1){transform:rotate(-1.2deg) translateY(6px)}
+.trio .box:nth-child(2){transform:translateY(-10px)}
+.trio .box:nth-child(3){transform:rotate(1deg) translateY(10px)}
+.box:hover{transform:translateY(-6px) rotate(0deg);box-shadow:0 20px 40px rgba(0,0,0,.5)}
 .box h2{margin:0 0 8px;font-size:clamp(15px,2.6vw,28px);color:var(--blue)}
 .box p{margin:0;font-size:clamp(13px,1.8vw,16px);color:var(--muted)}
 
