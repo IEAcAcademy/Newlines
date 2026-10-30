@@ -30,10 +30,10 @@ h3,h4{font-weight:400;color:#fff}
 
 /* three boxes side by side, each a link, at every width */
 .trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(8px,2vw,24px);max-width:1040px;margin:20px auto;padding:0 16px}
-.box{display:block;background:#FFE38A;border-radius:22px;box-shadow:0 14px 34px rgba(0,0,0,.38);padding:clamp(14px,3vw,40px) clamp(8px,2vw,24px);text-align:center;text-decoration:none;color:var(--text);transition:transform .3s ease,box-shadow .3s ease}
+.box{display:block;background:#E8D5B7;border-radius:22px;box-shadow:0 14px 34px rgba(0,0,0,.38);padding:clamp(14px,3vw,40px) clamp(8px,2vw,24px);text-align:center;text-decoration:none;color:var(--text);transition:transform .3s ease,box-shadow .3s ease}
 .box:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.5)}
-.box h2{margin:0 0 8px;font-size:clamp(15px,2.6vw,28px);color:#7A4F00}
-.box p{margin:0;font-size:clamp(13px,1.8vw,16px);color:#3A2A00}
+.box h2{margin:0 0 8px;font-size:clamp(15px,2.6vw,28px);color:#5C3A1E}
+.box p{margin:0;font-size:clamp(13px,1.8vw,16px);color:#3B2412}
 
 /* the home page fits one screen: no scrolling */
 body.home{height:100vh;height:100dvh;overflow:hidden;display:flex;flex-direction:column}
