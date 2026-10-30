@@ -22,7 +22,7 @@ h3,h4{font-weight:400;color:#fff}
 
 .hero-inner{position:absolute;left:clamp(16px,6vw,72px);right:clamp(16px,6vw,72px);bottom:25%;z-index:2;background:none;padding:10px 0}
 /* the heading runs across the hero like a banner */
-.ticker{margin:0;overflow:hidden;white-space:nowrap;font-family:Karla,sans-serif;font-weight:700;font-size:clamp(25px,4.9vw,50px);line-height:1.2;color:#fff;text-shadow:0 0 6px rgba(0,0,0,.95),0 2px 14px rgba(0,0,0,.9)}
+.ticker{margin:0;overflow:hidden;white-space:nowrap;font-family:Karla,sans-serif;font-weight:400;font-size:clamp(25px,4.9vw,50px);line-height:1.2;color:#fff;text-shadow:0 0 6px rgba(0,0,0,.95),0 2px 14px rgba(0,0,0,.9)}
 .ticker .track{display:inline-block;white-space:nowrap;animation:tick 22s linear infinite}
 .ticker .track span{display:inline-block}
 @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
