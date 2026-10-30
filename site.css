@@ -8,8 +8,8 @@ img{max-width:100%;height:auto}
 h1,h2{font-family:Karla,sans-serif;font-weight:700;line-height:1.2}
 h3,h4{font-weight:400;color:#fff}
 
-.top{background:#2EC4B6;padding:18px 16px;text-align:center}
-.brand{font-family:Montserrat,sans-serif;font-weight:600;font-size:clamp(20px,4vw,30px);letter-spacing:.12em;text-transform:uppercase;color:#003B38;text-decoration:none}
+.top{background:#FFC93C;padding:18px 16px;text-align:center}
+.brand{font-family:Montserrat,sans-serif;font-weight:600;font-size:clamp(20px,4vw,30px);letter-spacing:.12em;text-transform:uppercase;color:#3A2A00;text-decoration:none}
 
 /* the parade: ten covers, each fading in over the last, six seconds apart */
 .hero{position:relative;overflow:hidden;border-radius:26px;width:calc(100% - 32px);max-width:1040px;margin:20px auto;min-height:clamp(300px,60vh,640px);display:flex;align-items:center;padding:32px clamp(16px,6vw,72px);background:#000}
