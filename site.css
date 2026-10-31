@@ -49,6 +49,7 @@ body.home .trio{flex:none;margin:0 auto 16px}
 .page-panel h1{margin:0 0 18px;font-family:"Pacifico",cursive;font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:clamp(16px,2.4vw,24px);color:#5C3A1E}
 .page-panel p{margin:0 0 16px;font-family:"Playfair Display",serif;font-size:clamp(15px,1.6vw,17px);line-height:1.5;color:#3B2412}
 .page-panel a{color:#5C3A1E}
+.page-panel h2{margin:28px 0 10px;font-family:"Pacifico",cursive;font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:clamp(13px,1.6vw,17px);color:#5C3A1E}
 body.inner{display:flex;flex-direction:column;min-height:100vh;min-height:100dvh}
 body.inner main{flex:1;display:flex;flex-direction:column;justify-content:center}
 body.inner .page-panel{width:100%}
