@@ -45,8 +45,11 @@ body.home .hero{flex:1;min-height:0;margin:16px auto 8px}
 body.home .trio{flex:none;margin:0 auto 16px}
 
 /* the About and Reflections pages */
-.page-panel{background:#E8D5B7;border-radius:22px;box-shadow:0 14px 34px rgba(0,0,0,.38);max-width:760px;margin:24px auto;padding:clamp(24px,4vw,44px) clamp(20px,4vw,48px);text-align:center;color:#3B2412}
+.page-panel{background:#E8D5B7;border-radius:22px;box-shadow:0 14px 34px rgba(0,0,0,.38);max-width:760px;margin:24px auto;padding:clamp(24px,4vw,44px) clamp(20px,4vw,48px);text-align:left;color:#3B2412}
 .page-panel h1{margin:0 0 18px;font-family:"Pacifico",cursive;font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:clamp(16px,2.4vw,24px);color:#5C3A1E}
 .page-panel p{margin:0 0 16px;font-family:"Playfair Display",serif;font-size:clamp(15px,1.6vw,17px);line-height:1.5;color:#3B2412}
 .page-panel a{color:#5C3A1E}
+body.inner{display:flex;flex-direction:column;min-height:100vh;min-height:100dvh}
+body.inner main{flex:1;display:flex;flex-direction:column;justify-content:center}
+body.inner .page-panel{width:100%}
 .page-panel a.back{display:inline-block;margin-top:12px}
