@@ -34,7 +34,7 @@ h3,h4{font-weight:400;color:#fff}
 .box:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.5)}
 .box h2{margin:0 0 8px;font-family:"Pacifico",cursive;font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:clamp(6.5px,1.175vw,12.5px);color:#5C3A1E}
 .box p{margin:0;font-family:"Playfair Display",serif;font-size:clamp(13px,1.8vw,16px);color:#3B2412}
-.box .lead{margin:0;font-family:"Playfair Display",serif;font-size:clamp(10px,1.2vw,13px);line-height:1.35;color:#3B2412;text-align:justify;text-align-last:justify}
+.box .lead{margin:0;font-family:"Playfair Display",serif;font-size:clamp(10px,1.2vw,13px);line-height:1.35;color:#3B2412;text-align:left}
 .box .more{text-decoration:underline}
 .box .nowrap{white-space:nowrap}
 
