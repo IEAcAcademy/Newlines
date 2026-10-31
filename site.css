@@ -52,4 +52,6 @@ body.home .trio{flex:none;margin:0 auto 16px}
 body.inner{display:flex;flex-direction:column;min-height:100vh;min-height:100dvh}
 body.inner main{flex:1;display:flex;flex-direction:column;justify-content:center}
 body.inner .page-panel{width:100%}
+body.reflect main{padding:1in;gap:40px;justify-content:stretch}
+body.reflect .reflect-panel{flex:1;max-width:none;margin:0}
 .page-panel a.back{display:inline-block;margin-top:12px}
