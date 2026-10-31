@@ -34,6 +34,7 @@ h3,h4{font-weight:400;color:#fff}
 .box:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.5)}
 .box h2{margin:0 0 8px;font-family:"Pacifico",cursive;font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:clamp(6.5px,1.175vw,12.5px);color:#5C3A1E}
 .box p{margin:0;font-family:"Playfair Display",serif;font-size:clamp(13px,1.8vw,16px);color:#3B2412}
+.box .more{display:block;margin-top:8px;font-family:"Playfair Display",serif;font-size:clamp(13px,1.8vw,16px);color:#5C3A1E;text-decoration:underline}
 
 /* the home page fits one screen: no scrolling */
 body.home{height:100vh;height:100dvh;overflow:hidden;display:flex;flex-direction:column}
