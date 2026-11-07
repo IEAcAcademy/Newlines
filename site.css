@@ -47,7 +47,7 @@ body.home .trio{flex:none;margin:0 auto 16px}
 /* the About and Reflections pages */
 .page-panel{background:#E8D5B7;border-radius:22px;box-shadow:0 14px 34px rgba(0,0,0,.38);max-width:760px;margin:24px auto;padding:clamp(24px,4vw,44px) clamp(20px,4vw,48px);text-align:left;color:#3B2412}
 .page-panel h1{margin:0 0 18px;font-family:"Pacifico",cursive;font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:clamp(16px,2.4vw,24px);color:#5C3A1E}
-.page-panel p{margin:0 0 16px;font-family:"Playfair Display",serif;font-size:clamp(15px,1.6vw,17px);line-height:1.5;color:#3B2412}
+.page-panel p{margin:0 0 16px;font-family:"Playfair Display",serif;font-size:clamp(13px,1.2vw,16px);line-height:1.5;color:#3B2412}
 .page-panel a{color:#5C3A1E}
 .page-panel ul.links{list-style:none;margin:0 0 24px;padding:0}
 .page-panel ul.links li{margin:0 0 10px}
@@ -61,3 +61,64 @@ body.inner .page-panel{width:100%}
 body.reflect main{padding:1in;gap:40px;justify-content:stretch}
 body.reflect .reflect-panel{flex:1;max-width:none;margin:0}
 .page-panel a.back{display:inline-block;margin-top:12px}
+
+/* the Reflections page: commentaries and the movie review side by side, one column on a phone */
+.page-panel.wide{max-width:1040px}
+.two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,4vw,48px)}
+.two-col h2:first-child{margin-top:0}
+.page-panel h3{margin:24px 0 8px;font-family:"Playfair Display",serif;font-weight:700;font-size:clamp(16px,1.4vw,19px);color:#5C3A1E}
+.page-panel .date{font-style:normal;font-weight:400;font-size:clamp(15px,1.4vw,17px)}
+.page-panel ul.links a{overflow-wrap:anywhere}
+.page-panel h1 a{color:inherit;text-decoration:none}
+.page-panel h1 a:hover{text-decoration:underline}
+@media (max-width:700px){.two-col{grid-template-columns:1fr}}
+
+/* the review title and date are links to the full article; the title is set in the body font, not script */
+.page-panel .review-title{text-transform:none;letter-spacing:normal;font-family:"Playfair Display",serif;font-weight:700;font-size:clamp(18px,1.7vw,22px);line-height:1.35;margin:24px 0 6px;color:#5C3A1E}
+.review-title a,.page-panel .date a{color:inherit;text-decoration:none}
+.review-title a:hover,.page-panel .date a:hover{text-decoration:underline}
+.key-attractions{background:#F3E7D2;border-radius:16px;padding:clamp(14px,2.4vw,22px) clamp(16px,2.4vw,24px);margin:0 0 24px}
+.key-attractions h3{margin-top:0}
+.key-attractions ul{margin:0;padding-left:1.2em}
+.key-attractions li{margin:0 0 10px;font-family:"Playfair Display",serif;font-size:clamp(14px,1.5vw,16px);line-height:1.5;color:#3B2412}
+
+/* bulleted points in an article, in the body font */
+.page-panel ul.points,.page-panel ol.points{margin:0 0 16px;padding-left:1.4em;font-family:"Playfair Display",serif;font-size:clamp(13px,1.2vw,16px);line-height:1.5;color:#3B2412}
+.page-panel ul.points li{margin:0 0 8px}
+
+/* the article subheadings (second level) and the tools table */
+.page-panel h4{margin:18px 0 6px;font-family:"Playfair Display",serif;font-weight:700;font-size:clamp(14px,1.5vw,16px);color:#5C3A1E}
+.page-panel .table-wrap{overflow-x:auto;margin:8px 0 20px}
+.page-panel table.tools{width:100%;border-collapse:collapse;font-family:"Playfair Display",serif;font-size:clamp(12px,1.3vw,14px);line-height:1.4;color:#3B2412}
+.page-panel table.tools th,.page-panel table.tools td{border:1px solid #5C3A1E;padding:6px 8px;text-align:left;vertical-align:top}
+.page-panel table.tools th{font-weight:700;background:#F3E7D2}
+
+/* numbered risks, their sub-points, and indented paragraphs, as in the Word document */
+.page-panel ol.risks{margin:0 0 16px;padding-left:1.6em;font-family:"Playfair Display",serif;font-size:clamp(13px,1.2vw,16px);line-height:1.5;color:#3B2412}
+.page-panel ol.risks > li{margin:0 0 12px}
+.page-panel ol.risks ul.points{margin:8px 0 12px}
+.page-panel p.indent{margin-left:36px}
+
+/* the article page: wider side margins, and the subtitle set at h2 level in italic */
+.page-panel.article{padding-left:clamp(32px,8vw,120px);padding-right:clamp(32px,8vw,120px)}
+.page-panel h2.subtitle{font-style:italic;font-weight:400;margin-top:0}
+
+/* the Reflections heading on the articles page is centred */
+.page-panel h1.centred{text-align:center}
+
+/* source lines under figures in the articles */
+.page-panel p.source{font-size:clamp(12px,1.1vw,14px);margin-top:-8px}
+
+/* figures in the articles */
+.page-panel figure.figure{margin:8px 0 20px}
+.page-panel figure.figure img{display:block;width:100%;height:auto;border-radius:8px;background:#fff}
+
+/* a grey box for a list of key points */
+.page-panel .grey-box{background:#D6D6D6;border-radius:16px;padding:clamp(14px,2.4vw,22px) clamp(16px,2.4vw,24px);margin:8px 0 24px}
+.page-panel .grey-box ol.points{margin:0}
+
+/* highlights for review: changed text and new blocks, to be removed before publishing */
+.hl{outline:3px solid #FFD400;outline-offset:6px}
+
+/* copyright notice at the foot of each page */
+.copyright{display:table;margin:0 auto 24px;padding:8px 18px;background:#E8D5B7;border-radius:12px;font-family:"Playfair Display",serif;font-size:13px;color:#3B2412;text-align:center}
