@@ -1,0 +1,20 @@
+/* Download as PDF: the button on each article, and the print layout it produces */
+
+/* the row at the foot of an article: Home or Reflections on the left, Download as PDF on the right */
+.page-panel .article-nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-top:12px}
+.page-panel .article-nav a.back{margin:0}
+.download-pdf{display:inline-block;margin:0;padding:8px 18px;font-family:"Playfair Display",serif;font-size:15px;line-height:1.3;background:#5C3A1E;color:#F3E7D2;border:0;border-radius:999px;cursor:pointer}
+.download-pdf:hover,.download-pdf:focus-visible{background:#3B2412}
+
+/* the print dialog opened by the button: "Save as PDF" gives the article without the menu or buttons */
+@media print{
+  body{background:#fff!important;color:#000!important}
+  header.top,.article-nav,.back,.download-pdf{display:none!important}
+  .page-panel{background:#fff!important;box-shadow:none!important;border-radius:0;max-width:none;margin:0;padding:0}
+  .page-panel,.page-panel *{color:#000!important}
+  .page-panel a{text-decoration:underline}
+  .page-panel .grey-box,.page-panel .key-attractions{background:#f2f2f2!important}
+  .copyright{background:none!important;color:#000!important;margin:24px 0 0}
+  img,figure{break-inside:avoid}
+  h1,h2,h3,h4{break-after:avoid}
+}
